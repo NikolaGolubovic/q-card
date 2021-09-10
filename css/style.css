@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
 }
 
-@media (min-width: 330px) {
+@media screen and (min-width: 200px) {
     .container {
         width: 100%;
         display: flex;
@@ -49,7 +49,7 @@ body {
         flex-direction: column;
         justify-content: column;
         position: relative;
-        z-index: 5;
+        z-index: 6;
         overflow: hidden;
     }
     .top-card, .middle-card, .bottom-card {
@@ -68,7 +68,7 @@ body {
         left: 50%;
         position: absolute;
         top: 50%;
-        transform: translate(-50%, 30%);
+        transform: translate(-50%, 60%);
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -119,19 +119,19 @@ body {
     }
 }
 
-@media (min-width: 450px) {
+@media screen and (min-width: 450px) {
     .card {
         width: 60%;
     }
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .card {
         width: 50%;
     }
 }
 
-@media (min-width: 750px) {
+@media screen and (min-width: 750px) {
     .card {
         width: 40%;
     }
@@ -140,13 +140,13 @@ body {
     }
 }
 
-@media (min-width: 850px) {
+@media screen and (min-width: 850px) {
     .card {
         width: 40%;
     }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .card {
         width: 25%;
     }
@@ -158,10 +158,53 @@ body {
         bottom: -100px;
         right: -400px;
     }
+    .user-image-container {
+        background: white;
+        height: 100px;
+        width: 35%;
+        border-radius: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 60%);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        padding: 5px;
+    }
+    .user-image-container img {
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+    }
 }
 
-@media (min-width: 1400px) {
-    .card {
+@media screen and (min-width: 1200px) {
+    .user-image-container {
+        height: 100px;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .user-image-container {
+        height: 110px;
+        width: 25%;
+        top: 40%;
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    .user-image-container {
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .user-image-container {
+        height: 130px;
         width: 20%;
+        top: 35%;
     }
 }
