@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
 }
 
-@media screen and (min-width: 330px) {
+@media screen and (min-width: 200px) {
     .container {
         width: 100%;
         display: flex;
@@ -68,7 +68,7 @@ body {
         left: 50%;
         position: absolute;
         top: 50%;
-        transform: translate(-50%, 30%);
+        transform: translate(-50%, 60%);
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -158,10 +158,53 @@ body {
         bottom: -100px;
         right: -400px;
     }
+    .user-image-container {
+        background: white;
+        height: 100px;
+        width: 35%;
+        border-radius: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 60%);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        padding: 5px;
+    }
+    .user-image-container img {
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+    }
 }
 
-@media screen and (min-width: 1400px) {
-    .card {
+@media screen and (min-width: 1200px) {
+    .user-image-container {
+        height: 100px;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .user-image-container {
+        height: 110px;
+        width: 25%;
+        top: 40%;
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    .user-image-container {
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .user-image-container {
+        height: 130px;
         width: 20%;
+        top: 35%;
     }
 }
