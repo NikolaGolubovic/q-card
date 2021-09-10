@@ -188,6 +188,14 @@ body {
 }
 
 @media screen and (min-width: 1600px) {
+    .top-background-image {
+        top: -130px;
+        left: -100px;
+    }
+    .bottom-background-image {
+        bottom: -100px;
+        right: -400px;
+    }
     .user-image-container {
         height: 110px;
         width: 25%;
@@ -196,12 +204,25 @@ body {
 }
 
 @media screen and (min-width: 1850px) {
+    .top-background-image {
+        left: -390px;
+    }
+    .bottom-background-image {
+        right: -600px;
+    }
     .user-image-container {
         height: 140px;
     }
 }
 
 @media screen and (min-width: 2200px) {
+    .top-background-image {
+        top: -390px;
+    }
+    .bottom-background-image {
+        bottom: -60px;
+        right: -950px;
+    }
     .user-image-container {
         height: 130px;
         width: 20%;
