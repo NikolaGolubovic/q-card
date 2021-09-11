@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 28px;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 200px) {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background: #1BA0AC;
+        position: relative;
+    }
+    .top-background-image {
+        background-image: url("../images/bg-pattern-top.svg");
+        width: 50vw;
+        height: 70vh;
+        transform: rotate(180deg);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .bottom-background-image {
+        background-image: url("../images/bg-pattern-bottom.svg");
+        width: 60vw;
+        height: 60vh;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .card {
+        width: 90%;
+        height: 80vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: column;
+        position: relative;
+        z-index: 6;
+        overflow: hidden;
+    }
+    .top-card, .middle-card, .bottom-card {
+        height: 35%;
+        width: 100%;
+    }
+    .top-card {
+        background: url("../images/bg-pattern-card.svg");
+        position: relative;
+    }
+    .user-image-container {
+        background: white;
+        height: 100px;
+        width: 30%;
+        border-radius: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 60%);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        padding: 5px;
+    }
+    .user-image-container img {
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+    }
+    .user-name {
+        font-weight: bold;
+    }
+    .user-name span {
+        color: gray;
+        margin-left: 5px;
+        font-weight: lighter;
+        font-size: 1.1rem;
+    }
+    .user-location {
+        color: gray;
+        margin-top: 10px;
+    }
+    .middle-card {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-card {
+        border-top: 1px solid gray;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 30px;
+    }
+    .bottom-card>* {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-card small {
+        color: gray;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .card {
+        width: 40%;
+    }
+    .bottom-background-image {
+        right: -150px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        width: 25%;
+    }
+    .top-background-image {
+        top: -130px;
+        left: -100px;
+    }
+    .bottom-background-image {
+        bottom: -100px;
+        right: -400px;
+    }
+    .user-image-container {
+        background: white;
+        height: 100px;
+        width: 35%;
+        border-radius: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, 60%);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-items: center;
+        padding: 5px;
+    }
+    .user-image-container img {
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .user-image-container {
+        height: 100px;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .top-background-image {
+        top: -130px;
+        left: -100px;
+    }
+    .bottom-background-image {
+        bottom: -100px;
+        right: -400px;
+    }
+    .user-image-container {
+        height: 110px;
+        width: 25%;
+        top: 40%;
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    .top-background-image {
+        left: -390px;
+    }
+    .bottom-background-image {
+        right: -600px;
+    }
+    .user-image-container {
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .top-background-image {
+        top: -390px;
+    }
+    .bottom-background-image {
+        bottom: -60px;
+        right: -950px;
+    }
+    .user-image-container {
+        height: 130px;
+        width: 20%;
+        top: 35%;
+    }
+}
