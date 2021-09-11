@@ -60,25 +60,18 @@ body {
         background: url("../images/bg-pattern-card.svg");
         position: relative;
     }
-    .user-image-container {
-        background: white;
-        height: 100px;
-        width: 30%;
-        border-radius: 100%;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, 60%);
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        align-items: center;
+    .user-image {
+        height: auto;
+        position: relative;
+        top: -70px;
+        width: 120px;
         padding: 5px;
+        background: white;
+        border-radius: 50%;
     }
-    .user-image-container img {
+    .user-image img {
         width: 100%;
         border-radius: 50%;
-        height: auto;
     }
     .user-name {
         font-weight: bold;
@@ -158,33 +151,6 @@ body {
         bottom: -100px;
         right: -400px;
     }
-    .user-image-container {
-        background: white;
-        height: 100px;
-        width: 35%;
-        border-radius: 100%;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, 60%);
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        align-items: center;
-        padding: 5px;
-    }
-    .user-image-container img {
-        width: 100%;
-        border-radius: 50%;
-        height: auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .user-image-container {
-        height: 100px;
-        width: 35%;
-    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -196,22 +162,14 @@ body {
         bottom: -100px;
         right: -400px;
     }
-    .user-image-container {
-        height: 110px;
-        width: 25%;
-        top: 40%;
-    }
 }
 
 @media screen and (min-width: 1850px) {
     .top-background-image {
-        left: -390px;
+        left: -590px;
     }
     .bottom-background-image {
         right: -600px;
-    }
-    .user-image-container {
-        height: 140px;
     }
 }
 
@@ -222,10 +180,5 @@ body {
     .bottom-background-image {
         bottom: -60px;
         right: -950px;
-    }
-    .user-image-container {
-        height: 130px;
-        width: 20%;
-        top: 35%;
     }
 }

@@ -18,3 +18,5 @@
 .prettierignore
 
 /design
+.Prettierrc
+package.json
