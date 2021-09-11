@@ -43,7 +43,7 @@ body {
     }
     .card {
         width: 90%;
-        height: 70vh;
+        height: 60vh;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -52,9 +52,14 @@ body {
         z-index: 6;
         overflow: hidden;
     }
-    .top-card, .middle-card, .bottom-card {
+    .top-card {
         height: 35%;
-        width: 100%;
+    }
+    .middle-card {
+        height: 45%;
+    }
+    .bottom-card {
+        height: 20%;
     }
     .top-card {
         background: url("../images/bg-pattern-card.svg");
