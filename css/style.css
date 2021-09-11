@@ -42,7 +42,7 @@ body {
         right: 0;
     }
     .card {
-        width: 90%;
+        width: 85%;
         height: 60vh;
         border-radius: 10px;
         display: flex;
@@ -123,12 +123,6 @@ body {
     .bottom-card small {
         color: gray;
         font-size: 0.7rem;
-    }
-}
-
-@media screen and (min-width: 450px) {
-    .card {
-        width: 60%;
     }
 }
 
