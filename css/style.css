@@ -13,7 +13,7 @@ body {
     line-height: 1;
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 250px) {
     .container {
         width: 100%;
         display: flex;
@@ -57,6 +57,7 @@ body {
     }
     .middle-card {
         height: 45%;
+        font-size: 0.8rem;
     }
     .bottom-card {
         height: 20%;
@@ -86,7 +87,7 @@ body {
     }
     .user-name, .user-location {
         position: relative;
-        top: -20px;
+        top: -50px;
     }
     .user-name {
         font-weight: bold;
@@ -95,7 +96,6 @@ body {
         color: gray;
         margin-left: 5px;
         font-weight: lighter;
-        font-size: 1.1rem;
     }
     .user-location {
         color: gray;
@@ -104,6 +104,7 @@ body {
     .bottom-card {
         border-top: 1px solid rgba(128, 128, 128, 0.1);
         background: white;
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -122,13 +123,23 @@ body {
     }
     .bottom-card small {
         color: gray;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
 
 @media screen and (min-width: 600px) {
     .card {
         width: 50%;
+        border-radius: 10px;
+    }
+    .top-card {
+        height: 33%;
+    }
+    .middle-card {
+        height: 33%;
+    }
+    .bottom-card {
+        height: 33%;
     }
 }
 
