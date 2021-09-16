@@ -175,7 +175,7 @@ body {
         right: -400px;
     }
     .middle-card {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .bottom-card {
         font-size: 1.1rem;
@@ -204,7 +204,8 @@ body {
 
 @media screen and (min-width: 1850px) {
     .top-background-image {
-        left: -90px;
+        left: -390px;
+        top: -230px;
     }
     .bottom-background-image {
         right: -600px;
@@ -213,8 +214,7 @@ body {
 
 @media screen and (min-width: 2200px) {
     .top-background-image {
-        top: -390px;
-        left: -590px;
+        left: -690px;
     }
     .bottom-background-image {
         bottom: -60px;
