@@ -180,9 +180,6 @@ body {
     .bottom-card {
         font-size: 1.1rem;
     }
-    .user-location, .user-name {
-        top: 10px;
-    }
 }
 
 @media screen and (min-width: 1600px) {
