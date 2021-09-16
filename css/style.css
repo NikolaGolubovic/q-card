@@ -5,15 +5,15 @@
 }
 
 :root {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    line-height: 1.5;
+    line-height: 1;
 }
 
-@media (min-width: 330px) {
+@media screen and (min-width: 250px) {
     .container {
         width: 100%;
         display: flex;
@@ -42,43 +42,52 @@ body {
         right: 0;
     }
     .card {
-        width: 90%;
-        height: 80vh;
+        width: 85%;
+        height: 60vh;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         justify-content: column;
         position: relative;
-        z-index: 5;
+        z-index: 6;
         overflow: hidden;
     }
-    .top-card, .middle-card, .bottom-card {
+    .top-card {
         height: 35%;
-        width: 100%;
+    }
+    .middle-card {
+        height: 45%;
+        font-size: 0.8rem;
+    }
+    .bottom-card {
+        height: 20%;
     }
     .top-card {
         background: url("../images/bg-pattern-card.svg");
         position: relative;
     }
-    .user-image-container {
+    .middle-card {
         background: white;
-        height: 100px;
-        width: 30%;
-        border-radius: 100%;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, 30%);
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        padding: 5px;
     }
-    .user-image-container img {
+    .user-image {
+        height: auto;
+        position: relative;
+        top: -70px;
+        width: 120px;
+        padding: 5px;
+        background: white;
+        border-radius: 50%;
+    }
+    .user-image img {
         width: 100%;
         border-radius: 50%;
-        height: auto;
+    }
+    .user-name, .user-location {
+        position: relative;
+        top: -50px;
     }
     .user-name {
         font-weight: bold;
@@ -87,22 +96,15 @@ body {
         color: gray;
         margin-left: 5px;
         font-weight: lighter;
-        font-size: 1.1rem;
     }
     .user-location {
         color: gray;
         margin-top: 10px;
     }
-    .middle-card {
-        background: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .bottom-card {
-        border-top: 1px solid gray;
+        border-top: 1px solid rgba(128, 128, 128, 0.1);
         background: white;
+        font-size: 0.8rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -113,25 +115,35 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .bottom-card>*>* {
+        margin-bottom: 5px;
+    }
+    .bottom-card small {
+        letter-spacing: 1px;
+    }
     .bottom-card small {
         color: gray;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
 
-@media (min-width: 450px) {
-    .card {
-        width: 60%;
-    }
-}
-
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .card {
         width: 50%;
+        border-radius: 10px;
+    }
+    .top-card {
+        height: 33%;
+    }
+    .middle-card {
+        height: 33%;
+    }
+    .bottom-card {
+        height: 33%;
     }
 }
 
-@media (min-width: 750px) {
+@media screen and (min-width: 750px) {
     .card {
         width: 40%;
     }
@@ -140,13 +152,7 @@ body {
     }
 }
 
-@media (min-width: 850px) {
-    .card {
-        width: 40%;
-    }
-}
-
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .card {
         width: 25%;
     }
@@ -158,10 +164,41 @@ body {
         bottom: -100px;
         right: -400px;
     }
+    .middle-card {
+        font-size: 1rem;
+    }
+    .bottom-card {
+        font-size: 1.1rem;
+    }
 }
 
-@media (min-width: 1400px) {
-    .card {
-        width: 20%;
+@media screen and (min-width: 1600px) {
+    .top-background-image {
+        top: -130px;
+        left: -100px;
+    }
+    .bottom-background-image {
+        bottom: -100px;
+        right: -400px;
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    .top-background-image {
+        left: -90px;
+    }
+    .bottom-background-image {
+        right: -600px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .top-background-image {
+        top: -390px;
+        left: -590px;
+    }
+    .bottom-background-image {
+        bottom: -60px;
+        right: -950px;
     }
 }
