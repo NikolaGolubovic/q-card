@@ -42,7 +42,7 @@ body {
         right: 0;
     }
     .card {
-        width: 85%;
+        width: 80%;
         height: 60vh;
         border-radius: 10px;
         display: flex;
@@ -102,9 +102,9 @@ body {
         margin-top: 10px;
     }
     .bottom-card {
-        border-top: 1px solid rgba(128, 128, 128, 0.1);
+        border-top: 1.5px solid rgba(128, 128, 128, 0.1);
         background: white;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -119,11 +119,23 @@ body {
         margin-bottom: 5px;
     }
     .bottom-card small {
-        letter-spacing: 1px;
-    }
-    .bottom-card small {
         color: gray;
         font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    .card {
+        height: 95vh;
+    }
+    .user-image {
+        width: 100px;
+    }
+    .bottom-card {
+        font-size: 0.6rem;
+    }
+    .bottom-card small {
+        font-size: 0.65rem;
     }
 }
 
@@ -133,19 +145,20 @@ body {
         border-radius: 10px;
     }
     .top-card {
-        height: 33%;
+        height: 34%;
     }
     .middle-card {
         height: 33%;
     }
     .bottom-card {
         height: 33%;
+        font-size: 0.8rem;
     }
 }
 
 @media screen and (min-width: 750px) {
     .card {
-        width: 40%;
+        width: 45%;
     }
     .bottom-background-image {
         right: -150px;
@@ -153,9 +166,6 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-    .card {
-        width: 25%;
-    }
     .top-background-image {
         top: -130px;
         left: -100px;
@@ -165,14 +175,23 @@ body {
         right: -400px;
     }
     .middle-card {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .bottom-card {
         font-size: 1.1rem;
     }
+    .user-location, .user-name {
+        top: 10px;
+    }
 }
 
 @media screen and (min-width: 1600px) {
+    .card {
+        width: 25%;
+    }
+    .user-location, .user-name {
+        top: -50px;
+    }
     .top-background-image {
         top: -130px;
         left: -100px;
